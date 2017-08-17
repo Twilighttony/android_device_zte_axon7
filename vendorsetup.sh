@@ -1,1 +1,1 @@
-add_lunch_combo aosp_axon7-userdebug
+add_lunch_combo deso_axon7-userdebug

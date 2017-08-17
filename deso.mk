@@ -16,11 +16,15 @@
 $(call inherit-product, device/zte/axon7/full_axon7.mk)
 
 # Inherit some common N2 stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/deso/common.mk)
 
-PRODUCT_NAME := aosp_axon7
+PRODUCT_NAME := deso_axon7
+
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="P996A01_N" \
     BUILD_FINGERPRINT="ZTE/P996A01_N/ailsa_ii:7.0/NRD90M/20170128.052618:user/release-keys" \
     PRIVATE_BUILD_DESC="P996A01_N-user 7.0 NRD90M 20170128.052618 release-keys"
+
+PRODUCT_PACKAGES += \
+	Launcher3
